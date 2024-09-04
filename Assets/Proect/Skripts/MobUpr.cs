@@ -4,17 +4,13 @@ using UnityEngine;
 
 public class MobUpr : MonoBehaviour
 {
-    public void Muw(float muw) 
+    public InputPK ip;
+    public void Muw(int muw) 
     {
-        if (Muwer.rid) 
-        {
-            
-        }
-        
+        ip.Muw(muw);
     }
     public void Jump()
     {
-       
-       
+        ip.Jump();
     }
 }

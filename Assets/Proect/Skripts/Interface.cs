@@ -4,10 +4,11 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
 using InstantGamesBridge;
+using System;
 
 public class Interface : MonoBehaviour
 {
-    public UnityEvent gameer, pause, gameOver, note, password, inventar, cutScene;
+    public UnityEvent[] sumer;
     public static Interface rid { get; set; }
     void Awake()
     {
@@ -27,52 +28,23 @@ public class Interface : MonoBehaviour
 
     void Start()
     {
-       Pause();
+        sumer[0].Invoke();
     }
-    public void Pause()
+    public void Sum(int index)
     {
-        CursorEvent(true);
-        pause.Invoke();
-        Time.timeScale = 0;
+        sumer[index].Invoke();
+        if (index == 1)
+        {
+            CursorEvent(false);
+            Time.timeScale = 1;
+        }
+        else 
+        {
+            CursorEvent(true);
+            Time.timeScale = 0;
+        }
     }
-    public void Inventar()
-    {
-        CursorEvent(true);
-        inventar.Invoke();
-        Time.timeScale = 0;
-    }
-    public void Game()
-    {
-        CursorEvent(false);
-        gameer.Invoke();
-        Time.timeScale = 1;
-        //SaveAndLoad.Instance.Save();
-    }
-
-    public void GamOver()
-    {
-        gameOver.Invoke();
-        Time.timeScale = 0;
-        CursorEvent(true);
-    }
-    public void CutScene()
-    {
-        Time.timeScale = 0;
-        cutScene.Invoke();
-        CursorEvent(true);
-    }
-    public void Note()
-    {
-        note.Invoke();
-        Time.timeScale = 0;
-        CursorEvent(true);
-    }
-    public void Password()
-    {
-        password.Invoke();
-        Time.timeScale = 0;
-        CursorEvent(true);
-    }
+   
     void CursorEvent(bool activ)
     {
         if (activ)

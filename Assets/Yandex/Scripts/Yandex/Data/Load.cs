@@ -19,6 +19,7 @@ public class Load : MonoBehaviour, IEventReceiver<OnLoadIsComplete>
     {
         EventBus.Register(this);
         SaveAndLoad.Instance.Load();
+        Loading();
     }
 
     private void OnDestroy()

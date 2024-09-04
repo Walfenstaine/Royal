@@ -59,7 +59,7 @@ public class ShowInter : MonoBehaviour, IEventReceiver<ShowInterAds>
 
         if (state == InterstitialState.Opened)
         {
-            Interface.rid.Pause();
+            Interface.rid.Sum(0);
             sorse.mute = true;
         }
     }

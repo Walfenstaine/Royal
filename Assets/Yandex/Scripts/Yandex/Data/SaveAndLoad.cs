@@ -47,7 +47,7 @@ public class SaveAndLoad : MonoBehaviour
 
     private void SetBoard()
     {
-        var _yandexLeaderboardNameInput = "LEADER1";
+        var _yandexLeaderboardNameInput = "LEADER22";
         Bridge.leaderboard.SetScore(
             success =>
             {
@@ -69,10 +69,8 @@ public class SaveAndLoad : MonoBehaviour
     {
         myData.record = 0;
         myData.soundOn = true;
-        myData.m_Intensity = 0.5f;
         myData.level = "Scene1";
         myData.lives = 3;
-        myData.coins = 0;
     }
 
 
