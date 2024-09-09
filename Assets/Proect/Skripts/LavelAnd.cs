@@ -28,4 +28,9 @@ public class LavelAnd : MonoBehaviour {
         Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name);
     }
+    public void Next()
+    {
+        SaveAndLoad.Instance.Save();
+        SceneManager.LoadScene(level);
+    }
 }
