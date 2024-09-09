@@ -5,8 +5,10 @@ using InstantGamesBridge;
 
 public class InputPK : MonoBehaviour
 {
+    public AudioClip jump;
     public void Jump() 
     {
+        SoundPlayer.regit.Play(jump, 1);
         ColorRemainer.rid.Remein();
     }
     public void Muw(int muw) 
@@ -23,7 +25,7 @@ public class InputPK : MonoBehaviour
         {
             Jump();
         }
-        if (Bridge.device.type != InstantGamesBridge.Modules.Device.DeviceType.Desktop)
+        if (Bridge.device.type != InstantGamesBridge.Modules.Device.DeviceType.Mobile)
         {
             Muw((int)Input.GetAxis("Horizontal"));
         }
