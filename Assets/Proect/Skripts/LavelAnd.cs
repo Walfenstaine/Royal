@@ -24,9 +24,25 @@ public class LavelAnd : MonoBehaviour {
     }
     public void Reload()
     {
+        if (data.lives > 0)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            data.lives -= 1;
+            SaveAndLoad.Instance.Save();
+        }
+        else 
+        {
+            data.record = 0;
+            data.level = "Scene1";
+            data.lives = 3;
+            SaveAndLoad.Instance.Save();
+            SceneManager.LoadScene("Scene1");
+        }
+    }
+    public void Reclame()
+    {
         SaveAndLoad.Instance.Save();
-        Scene scene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(scene.name);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     public void Next()
     {
