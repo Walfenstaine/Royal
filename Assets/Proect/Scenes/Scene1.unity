@@ -702,14 +702,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Interfs
       objectReference: {fileID: 0}
-    - target: {fileID: 4828301010581004520, guid: d11140704c628fb428a1a849241dfb63, type: 3}
-      propertyPath: liv
+    - target: {fileID: 1687770728485981804, guid: d11140704c628fb428a1a849241dfb63, type: 3}
+      propertyPath: m_Camera
       value: 
-      objectReference: {fileID: 8300000, guid: 4fa2250c6c8ad5a449d5b5306d0eec1b, type: 3}
-    - target: {fileID: 4828301010581004520, guid: d11140704c628fb428a1a849241dfb63, type: 3}
-      propertyPath: clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 1a064ceee5e6be14bbc902d5f3728cd1, type: 3}
+      objectReference: {fileID: 5119411340370476757}
     - target: {fileID: 5879509839524077396, guid: d11140704c628fb428a1a849241dfb63, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -970,6 +966,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51b4d5faff7e2994782f55a3df204aa6, type: 3}
+--- !u!20 &5119411340370476757 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 7040550285341188392, guid: 51b4d5faff7e2994782f55a3df204aa6, type: 3}
+  m_PrefabInstance: {fileID: 5119411340370476756}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6778540026030062799
 PrefabInstance:
   m_ObjectHideFlags: 0
