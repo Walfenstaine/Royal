@@ -129,7 +129,7 @@ Canvas:
   m_GameObject: {fileID: 520774173883219143}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -1301,7 +1301,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &9108269134240545389
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3879,6 +3879,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4297eb3d5c426404692c6e6532a54136, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: 1a064ceee5e6be14bbc902d5f3728cd1, type: 3}
+  liv: {fileID: 8300000, guid: 4fa2250c6c8ad5a449d5b5306d0eec1b, type: 3}
   data: {fileID: 11400000, guid: 2d24e1bdce643a543a1915e38c2dd049, type: 2}
   herses:
   - {fileID: 681985326088489424}
