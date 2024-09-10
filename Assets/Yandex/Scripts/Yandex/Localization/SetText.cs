@@ -15,7 +15,15 @@ public class SetText: MonoBehaviour
         }
         else
         {
-            myText.text = language.en;
+            if (Bridge.platform.language == "en") 
+            {
+                myText.text = language.en;
+            }
+            if (Bridge.platform.language == "tr")
+            {
+                myText.text = language.tr;
+            }
+            
         }
     }
 }

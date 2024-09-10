@@ -7,4 +7,6 @@ public class Language: ScriptableObject
     [field: SerializeField] public string en {get; private set;}
     [field: TextArea(5, 5)]
     [field: SerializeField] public string ru {get; private set;}
+    [field: TextArea(5, 5)]
+    [field: SerializeField] public string tr { get; private set; }
 }
