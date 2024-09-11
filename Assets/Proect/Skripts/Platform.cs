@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Platform : MonoBehaviour
 {
-    public BoxCollider2D colider;
+    public BoxCollider2D[] colider;
     public SpriteRenderer[] sprites;
     public int num;
 
@@ -29,13 +29,16 @@ public class Platform : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (num == ColorRemainer.rid.num)
+        for (int i = 0; i < colider.Length; i++)
         {
-            colider.enabled = true;
-        }
-        else 
-        {
-            colider.enabled = false;
+            if (num == ColorRemainer.rid.num)
+            {
+                colider[i].enabled = true;
+            }
+            else
+            {
+                colider[i].enabled = false;
+            }
         }
     }
 }
