@@ -5,7 +5,7 @@ using UnityEngine;
 public class ColorRemainer : MonoBehaviour
 {
     public float speed, jumpSpeed;
-    public SpriteRenderer render;
+    public SpriteRenderer render, next;
     public Animator anim;
     public Color[] colors;
     public Rigidbody2D rb;
@@ -69,6 +69,14 @@ public class ColorRemainer : MonoBehaviour
     {
         rb.AddForce(transform.right * speed * muwer);
         render.color = colors[num];
+        if (num < colors.Length - 1)
+        {
+            next.color = colors[num + 1];
+        }
+        else 
+        {
+            next.color = colors[0];
+        }
         if (muwer > 0) 
         {
             transform.localScale = new Vector3(5, 5, 5);
