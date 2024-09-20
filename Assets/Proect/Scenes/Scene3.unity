@@ -3897,6 +3897,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1255327444, guid: d11140704c628fb428a1a849241dfb63, type: 3}
+      propertyPath: level
+      value: Scene4
+      objectReference: {fileID: 0}
     - target: {fileID: 520774173883219143, guid: d11140704c628fb428a1a849241dfb63, type: 3}
       propertyPath: m_Name
       value: Interfs
@@ -4650,6 +4654,10 @@ PrefabInstance:
     - target: {fileID: 4939452000734954101, guid: 8beae9b999a04e340a223418a115c511, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6898134720284953571, guid: 8beae9b999a04e340a223418a115c511, type: 3}
+      propertyPath: activ
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6898134720284953571, guid: 8beae9b999a04e340a223418a115c511, type: 3}
       propertyPath: sumer.m_PersistentCalls.m_Calls.Array.size
