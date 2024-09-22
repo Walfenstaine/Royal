@@ -23,7 +23,7 @@ public class Platform : MonoBehaviour
 
     public void Recolor() 
     {
-        num = Random.Range(0, ColorRemainer.rid.colors.Length-1);
+        num = Random.Range(0, ColorRemainer.rid.colors.Length);
         Remain();
     }
 

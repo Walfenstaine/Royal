@@ -32,6 +32,12 @@ public class ColorRemainer : MonoBehaviour
     {
         render.color = colors[num];
     }
+    public void Recolor()
+
+    {
+        num = Random.Range(0 , colors.Length);
+    }
+
     public void Remein() 
     {
         if (grunded)
