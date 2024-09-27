@@ -11,6 +11,14 @@ public class Portal : MonoBehaviour
     public static Portal rid { get; set; }
     void Awake()
     {
+        if (activ == 0)
+        {
+            port.SetActive(true);
+        }
+        else 
+        {
+            port.SetActive(false);
+        }
         if (rid == null)
         {
             rid = this;
@@ -50,7 +58,10 @@ public class Portal : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            Masager.rid.OnMasage(false);
+            if (activ > 0)
+            {
+                Masager.rid.OnMasage(false);
+            }
         }
     }
 }

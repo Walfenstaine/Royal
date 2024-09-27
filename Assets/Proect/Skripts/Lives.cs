@@ -5,6 +5,8 @@ using UnityEngine;
 public class Lives : MonoBehaviour
 {
     public AudioClip clip, liv;
+    public Data data;
+    public GameObject[] herses;
     public static Lives rid { get; set; }
     private int timer = 100;
     void Awake()
@@ -22,8 +24,7 @@ public class Lives : MonoBehaviour
     {
         rid = null;
     }
-    public Data data;
-    public GameObject[] herses;
+    
     void Start()
     {
         for (int i = 0; i < herses.Length; i++)
@@ -52,6 +53,7 @@ public class Lives : MonoBehaviour
             timer = 100;
             Start();
         }
-        data.coins += 1;
+        data.record += 1;
+        SaveAndLoad.Instance.Save();
     }
 }
