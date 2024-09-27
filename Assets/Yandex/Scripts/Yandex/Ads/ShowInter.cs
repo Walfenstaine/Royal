@@ -53,13 +53,14 @@ public class ShowInter : MonoBehaviour, IEventReceiver<ShowInterAds>
     {
         if (state == InterstitialState.Closed)
         {
+            sorse.Play();
             sorse.mute = !data.soundOn;
         }
 
 
         if (state == InterstitialState.Opened)
         {
-            Interface.rid.Sum(0);
+            sorse.Stop();
             sorse.mute = true;
         }
     }

@@ -46,6 +46,7 @@ public class LavelAnd : MonoBehaviour {
     }
     public void Next()
     {
+        data.level = level;
         SaveAndLoad.Instance.Save();
         SceneManager.LoadScene(level);
     }
