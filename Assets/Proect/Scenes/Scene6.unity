@@ -1493,7 +1493,7 @@ PrefabInstance:
     - target: {fileID: 5795074310180032552, guid: d11140704c628fb428a1a849241dfb63, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 1756c226df195dc4ab2adfb09acf5561, type: 3}
+      objectReference: {fileID: 8300000, guid: ee88959bac317d6449b7b5376df94a04, type: 3}
     - target: {fileID: 5879509839524077396, guid: d11140704c628fb428a1a849241dfb63, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -2285,32 +2285,3 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6c33275af02e724b8772569457747a3, type: 3}
---- !u!1660057539 &9223372036854775807
-SceneRoots:
-  m_ObjectHideFlags: 0
-  m_Roots:
-  - {fileID: 641001189}
-  - {fileID: 3595306141671418127}
-  - {fileID: 1013100911772923284}
-  - {fileID: 5119411340370476756}
-  - {fileID: 477817108042329597}
-  - {fileID: 3488631676647131846}
-  - {fileID: 8033120977306913063}
-  - {fileID: 7246639694175507416}
-  - {fileID: 6778540026030062799}
-  - {fileID: 1550861434}
-  - {fileID: 2104219639148306701}
-  - {fileID: 153665716713838105}
-  - {fileID: 7725343813851343732}
-  - {fileID: 1544653590}
-  - {fileID: 1390995835}
-  - {fileID: 2010949284}
-  - {fileID: 1811652935}
-  - {fileID: 2066086645}
-  - {fileID: 1344087001}
-  - {fileID: 2106583327}
-  - {fileID: 2024580123}
-  - {fileID: 555381711}
-  - {fileID: 333374570}
-  - {fileID: 39734581}
-  - {fileID: 1228151927}
