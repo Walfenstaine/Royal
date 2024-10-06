@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using InstantGamesBridge;
 
 public class InputPK : MonoBehaviour
 {
@@ -25,9 +24,10 @@ public class InputPK : MonoBehaviour
         {
             Jump();
         }
-        if (Bridge.device.type != InstantGamesBridge.Modules.Device.DeviceType.Mobile)
-        {
-            Muw((int)Input.GetAxis("Horizontal"));
-        }
+        //if (Bridge.device.type != InstantGamesBridge.Modules.Device.DeviceType.Mobile)
+        // {
+        // Muw((int)Input.GetAxis("Horizontal"));
+        // }
+        Muw((int)Input.GetAxis("Horizontal"));
     }
 }

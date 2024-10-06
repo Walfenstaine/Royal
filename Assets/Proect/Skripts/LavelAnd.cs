@@ -28,26 +28,26 @@ public class LavelAnd : MonoBehaviour {
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             data.lives -= 1;
-            SaveAndLoad.Instance.Save();
+            //SaveAndLoad.Instance.Save();
         }
         else 
         {
             data.record = 0;
             data.level = "Scene1";
             data.lives = 3;
-            SaveAndLoad.Instance.Save();
+            //SaveAndLoad.Instance.Save();
             SceneManager.LoadScene("Scene1");
         }
     }
     public void Reclame()
     {
-        SaveAndLoad.Instance.Save();
+        //SaveAndLoad.Instance.Save();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     public void Next()
     {
         data.level = level;
-        SaveAndLoad.Instance.Save();
+       // SaveAndLoad.Instance.Save();
         SceneManager.LoadScene(level);
     }
 }

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
-using InstantGamesBridge;
 using System;
 
 public class Interface : MonoBehaviour

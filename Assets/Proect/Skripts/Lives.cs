@@ -54,6 +54,6 @@ public class Lives : MonoBehaviour
             Start();
         }
         data.record += 1;
-        SaveAndLoad.Instance.Save();
+        //SaveAndLoad.Instance.Save();
     }
 }

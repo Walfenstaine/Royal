@@ -3682,10 +3682,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1255327444, guid: d11140704c628fb428a1a849241dfb63, type: 3}
-      propertyPath: level
-      value: Scene2
-      objectReference: {fileID: 0}
     - target: {fileID: 520774173883219143, guid: d11140704c628fb428a1a849241dfb63, type: 3}
       propertyPath: m_Name
       value: Interfs
@@ -3694,6 +3690,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 5119411340370476757}
+    - target: {fileID: 5759225880435561544, guid: d11140704c628fb428a1a849241dfb63, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5879509839524077396, guid: d11140704c628fb428a1a849241dfb63, type: 3}
       propertyPath: m_Pivot.x
       value: 0
